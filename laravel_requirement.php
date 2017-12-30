@@ -171,7 +171,7 @@ class Scanner {
 	public function htaccess() {
 		if (file_exists(__DIR__ .'/.htaccess')) {
 			return '.htaccess  file exists <i class="fa fa-check" style="color:#090"></i>';
-		} elseif (file_exists('/'.__DIR__ .'/.htaccess')) {
+		} elseif (file_exists('../'.__DIR__ .'/.htaccess')) {
 			return '.htaccess  file exists <i class="fa fa-check" style="color:#090"></i>';
 		} else {
 			return '.htaccess  file is missing <i class="fa fa-times" style="color:#c33"></i>';
